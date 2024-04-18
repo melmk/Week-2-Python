@@ -12,10 +12,13 @@ def announce(f):
     # returns the wrapper function (i.e calls)
     return wrapper
 
-# Calls the decorator to apply to the function below
+# Wraps the function in the decorator to apply to the function below
 @announce
 def hello():
     print("Hello, world")
 
 # Run the function
 hello()
+
+# Usage of decorators includes checking a user is logged in before running the enclosed function
+# Useful and will learn more about with Django
